@@ -5,6 +5,7 @@ import Activities from './components/Activities';
 import NewActivity from './views/NewActivity';
 import UpdateActivity from './views/UpdateActivity';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import "./styles/style.css"
 
 
 import './App.css';
@@ -77,13 +78,13 @@ function App() {
 
   return (
     <div className="container">
-      <div style={{ textAlign: "center" }}>
+      <div class="header">
         <h1>Activities Organizer</h1>
         <a className="btn btn-sm btn-outline-primary" href="/activities" style={{ textDecoration: "none"}}>Home</a>{" "}
         <a className="btn btn-sm btn-outline-primary" href="/activities/new" style={{ textDecoration: "none"}}>Create New Activity</a>{" "}
         <button className="btn btn-sm btn-outline-primary" onClick={(event) => {
-          sortArray(event)
-        }}>Sort Activities by Date</button>
+              sortArray(event)}}>Sort Activities by Date</button>
+        <h6 style={{ marginTop: "5px" }}>Click on the cards for more information!</h6>
       </div>
       <hr/>
 

@@ -7,8 +7,7 @@ const Activity = (props) => {
             className="card"
             onClick={(event) => {
             props.handleFlipCardClick(event, props.index);
-            }}
-        >
+            }}>
             <h3>{props.card.title}</h3>
             {/* ternary syntax - condition ? "returned if true" : "returned if false" */}
             {props.card.flipped ? (
